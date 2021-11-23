@@ -55,6 +55,7 @@ MyRouter.post(
         }
         req.app.matrix[xPosition][yPosition]=color;
 
+        console.log(req.app.matrix)
         return res.json({
             status: 200,
             matrix: req.app.matrix,
